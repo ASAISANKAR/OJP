@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%xm!&e%u84$pyu^+_m7#vp^1!3)vpafik=u_vh#wb*fk=ld=pg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['saisankar4.pythonanywhere.com']
 
 
 # Application definition
@@ -114,17 +114,14 @@ DATABASES = {
 }
 '''
 
-#neon.tech PgSQL
-
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'OJP',
-    'USER': 'asankar2004',
-    'PASSWORD': '3deqn4ExDBHV',
-    'HOST': 'ep-proud-grass-a5fn04pl.us-east-2.aws.neon.tech',
-    'PORT': '5432',
-    'OPTIONS': {'sslmode': 'require'},
+    'NAME': 'railway',
+    'USER': 'postgres',
+    'PASSWORD': 'bAgcEAE64GcD55DB1B*E5CC5-aDGCG-b',
+    'HOST': 'monorail.proxy.rlwy.net',
+    'PORT': '18008',
   }
 }
 

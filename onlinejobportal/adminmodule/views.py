@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect
 
 
 # Create your views here.
-@login_required(login_url='logout')
+
 def projecthomepage(request):
     return render(request,'adminmodulehomepage.html')
 

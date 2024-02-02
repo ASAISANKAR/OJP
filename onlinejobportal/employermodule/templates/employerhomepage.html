@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'employernavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employer</title>
+</head>
+<body>
+{% block body %}
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://img.freepik.com/free-photo/satisfied-businessman-company-employer-wearing-suit-handshake-new-employee-get-hired-job-interview-man-hr-manager-employ-successful-candidate-shake-hand-business-meeting-placement-concept_482257-5113.jpg" class="d-block w-100" alt="emp">
+    </div>
+    <div class="carousel-item">
+      <img src="https://systemart.com/blogs/upload/blog/good-employer.jpg" class="d-block w-100" alt="emp">
+    </div>
+    <div class="carousel-item">
+      <img src="https://hospitalityinsights.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/employer%20branding.jpeg" class="d-block w-100" alt="emp">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock%}
+</body>
+</html>

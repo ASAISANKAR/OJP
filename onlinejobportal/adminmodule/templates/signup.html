@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'adminnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+{% if messages %}
+{% for message in messages %}
+{% if message.tags %}
+<script>alert ("{{ message }}")</script>
+{% endif %}
+{% endfor %}
+{% endif %}
+<div class="container1">
+    <div class = 'bodycontainer' align="center">
+        <h1>Register Page</h1>
+        <br>
+        <form method="post" action="{% url 'signup1' %}">
+            {% csrf_token %}
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter Student ID / Employer ID"><br><br>
+            <label>Password</label>
+            <input type="password" name="password"><br><br>
+            <label>Confirm Password</label>
+            <input type="password" name="password1"><br><br>
+            <div class="d-grid gap-2 col-4 mx-left">
+            <button type="submit" name="SUBMIT" class="btn btn-primary btn-lg">SUBMIT</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+</body>
+</html>

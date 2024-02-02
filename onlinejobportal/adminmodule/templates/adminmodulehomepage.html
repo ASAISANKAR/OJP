@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends 'adminnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+{% block body%}
+<h1 align="center">Home Page</h1>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+      <img src="https://www.sapphiresolutions.net/images/job_new_portfolio/job_portal_about.svg" class="d-block w-100" alt="job-portal">
+    </div>
+    <div class="carousel-item">
+      <img src="https://externlabs.com/blogs/wp-content/uploads/2023/04/New-Project-64.jpg" class="d-block w-100" alt="job-portal">
+    </div>
+    <div class="carousel-item">
+      <img src="https://pulsehrm.com/wp-content/uploads/2020/10/Job-Portal-Software-2-2.png" class="d-block w-100" alt="job-portal">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock%}
+
+</body>
+</html>

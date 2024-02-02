@@ -85,6 +85,8 @@ DATABASES = {
     }
 }
 '''
+
+'''
 #offline
 DATABASES = {
     'default' : {
@@ -96,6 +98,36 @@ DATABASES = {
         'PORT': '5433',
     }
 }
+'''
+
+'''
+#MY SQL DB
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'OJP',
+        'USER': 'saisankar4',
+        'PASSWORD': 'tejeswarsai',
+        'HOST':'saisankar4.mysql.pythonanywhere-services.com',
+        
+    }
+}
+'''
+
+#neon.tech PgSQL
+
+DATABASES = {
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'OJP',
+    'USER': 'asankar2004',
+    'PASSWORD': '3deqn4ExDBHV',
+    'HOST': 'ep-proud-grass-a5fn04pl.us-east-2.aws.neon.tech',
+    'PORT': '5432',
+    'OPTIONS': {'sslmode': 'require'},
+  }
+}
+
 
 
 '''

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%xm!&e%u84$pyu^+_m7#vp^1!3)vpafik=u_vh#wb*fk=ld=pg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['saisankar4.pythonanywhere.com']
+ALLOWED_HOSTS = ['saisankar4.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -77,14 +77,14 @@ WSGI_APPLICATION = 'onlinejobportal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-'''
+
 
 '''
 #offline
@@ -113,7 +113,7 @@ DATABASES = {
     }
 }
 '''
-
+'''
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql',
@@ -124,7 +124,7 @@ DATABASES = {
     'PORT': '18008',
   }
 }
-
+'''
 
 
 '''
